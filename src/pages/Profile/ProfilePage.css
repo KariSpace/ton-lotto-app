@@ -1,0 +1,60 @@
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-container{
+  text-align: -webkit-center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.editButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  width: 278px;
+  height: 40px;
+  margin: 20px 40px;
+  background: #151511;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  position: relative; /* Needed for positioning child elements */
+}
+
+.buttonText {
+  text-align: center;
+  flex: 1; /* Allows text to center in the flex container */
+}
+
+.arrow {
+  position: absolute; /* Position arrow independently */
+  right: 12px; /* Align to the right of the button */
+  width: 16px;
+  height: 16px;
+}

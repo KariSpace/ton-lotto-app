@@ -10,10 +10,11 @@ interface TicketProps {
 
 export const Ticket: React.FC<TicketProps> = ({ id, amount, numbers, status }) => {
   return (
-    <div className="ticket">
+    <div className="ticket ">
       <div className="ticket-background">
         <div className="ticket-circles">
           <div className="circle top" />
+          <div className="divider" />
           <div className="circle bottom" />
         </div>
         

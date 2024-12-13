@@ -1,5 +1,4 @@
 import { Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
-import { MenuBar } from '@/components/MenuBar/MenuBar';
 import type { FC } from 'react';
 
 import { Link } from '@/components/Link/Link.tsx';
@@ -39,8 +38,6 @@ export const IndexPage: FC = () => {
           </Link>
         </Section>
       </List>
-      <MenuBar>
-      </MenuBar>
     </Page>
   );
 };
