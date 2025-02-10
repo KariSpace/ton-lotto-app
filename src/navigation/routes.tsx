@@ -4,7 +4,7 @@ import { IndexPage } from '@/pages/IndexPage/IndexPage';
 import { InitDataPage } from '@/pages/InitDataPage.tsx';
 import { LaunchParamsPage } from '@/pages/LaunchParamsPage.tsx';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
-import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
+import { ProfilePage } from '@/pages/Profile/ProfilePage';
 import { TicketsPage } from '@/pages/TicketsPage/TicketsPage';
 
 interface Route {
@@ -32,8 +32,8 @@ export const routes: Route[] = [
   },
   {
     path: '/ton-connect',
-    Component: TONConnectPage,
-    title: 'TON Connect',
+    Component: ProfilePage,
+    title: 'Profile',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

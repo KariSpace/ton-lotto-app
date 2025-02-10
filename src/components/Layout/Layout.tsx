@@ -9,10 +9,10 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.layout}>
-      <MenuBar />
       <main className={styles.main}>
         {children}
       </main>
+      <MenuBar/>
     </div>
   );
 }

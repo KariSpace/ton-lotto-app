@@ -6,7 +6,7 @@
   padding: 0 2%;
   position: fixed;
   width: 100%;
-  height: 106px;
+  height: 15vh;
   bottom: 0;
   z-index: 100;
   box-sizing: border-box;
@@ -36,7 +36,7 @@
   align-items: center;
   padding: 12px 0px 16px;
   gap: 6px;
-  width: 125px;
+  width: 30%;
   height: 82px;
   flex: none;
   order: 0;
@@ -139,7 +139,7 @@
 /* Ручка для навігації */
 .handle {
   position: absolute;
-  width: 108px;
+  width: 30%;
   height: 4px;
   left: calc(50% - 108px/2 + 0.5px);
   top: calc(50% - 4px/2);

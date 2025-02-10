@@ -1,22 +1,43 @@
 import React from 'react';
-import { Link } from '@/components/Link/Link.tsx';
-
-import arrowSvg from './arrow.svg';
+import { TonConnectButton } from '@tonconnect/ui-react';
 import { Ticket } from '@/components/Ticket/Ticket';
-
 import './ProfilePage.css';
 
 const tickets = [
     {
         id: "1234",
         amount: "₴100",
-        numbers: ["7", "11", "23", "42", "48"],
+        numbers: ["7", "11", "23", "42", "48", "99"],
         status: "Active"
     },
     {
         id: "299482179034",
         amount: "$279,135",
-        numbers: ["7", "11", "23", "42", "48"],
+        numbers: ["7", "11", "23", "42", "48", "10"],
+        status: "In progress"
+    },
+    {
+        id: "299482179034",
+        amount: "$279,135",
+        numbers: ["7", "11", "23", "42", "48", "85"],
+        status: "In progress"
+    },    
+    {
+        id: "299482179034",
+        amount: "$279,135",
+        numbers: ["7", "11", "23", "42", "48", "12"],
+        status: "In progress"
+    },
+    {
+        id: "299482179034",
+        amount: "$279,135",
+        numbers: ["7", "11", "23", "42", "48", "02"],
+        status: "In progress"
+    },
+    {
+        id: "299482179034",
+        amount: "$279,135",
+        numbers: ["7", "11", "23", "42", "48", "29"],
         status: "In progress"
     }
 
@@ -33,15 +54,13 @@ export const ProfilePage: React.FC = () => {
                     <div className="profile-field">
                         <label>ID: 1234.235.33.1157</label>
                     </div>
-                    <Link to="/ton-connect">
-
+                    {/* <Link to="/ton-connect">
                         <button className="editButton">
-                            {/* Add Wallet */}
                             <span className="buttonText">Add Wallet</span>
-
                             <img src={arrowSvg} alt="Arrow" className="arrow" />
                         </button>
-                    </Link>
+                    </Link> */}
+                    <TonConnectButton className="ton-connect-page__button-connected editButton"/>
                 </div>
 
             </div>

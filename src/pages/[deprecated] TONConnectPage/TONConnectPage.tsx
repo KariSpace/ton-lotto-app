@@ -40,16 +40,16 @@ export const TONConnectPage: FC = () => {
     );
   }
 
-  const {
-    account: { chain, publicKey, address },
-    device: {
-      appName,
-      appVersion,
-      maxProtocolVersion,
-      platform,
-      features,
-    },
-  } = wallet;
+  // const {
+  //   account: { chain, publicKey, address },
+  //   device: {
+  //     appName,
+  //     appVersion,
+  //     maxProtocolVersion,
+  //     platform,
+  //     features,
+  //   },
+  // } = wallet;
 
   return (
     <Page>
@@ -74,15 +74,15 @@ export const TONConnectPage: FC = () => {
             <TonConnectButton className="ton-connect-page__button-connected"/>
           </>
         )}
-        <DisplayData
+        {/* <DisplayData
           header="Account"
           rows={[
             { title: 'Address', value: address },
             { title: 'Chain', value: chain },
             { title: 'Public Key', value: publicKey },
           ]}
-        />
-        <DisplayData
+        /> */}
+        {/* <DisplayData
           header="Device"
           rows={[
             { title: 'App Name', value: appName },
@@ -97,7 +97,7 @@ export const TONConnectPage: FC = () => {
                 .join(', '),
             },
           ]}
-        />
+        /> */}
       </List>
     </Page>
   );

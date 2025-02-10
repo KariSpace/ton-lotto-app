@@ -5,7 +5,7 @@
   align-items: center;
   padding: 12px 0 16px;
   gap: 6px;
-  width: 125px;
+  width: 30%;
   height: 82px;
   text-decoration: none;
   cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .tab-label {
-  width: 125px;
+  /* width: 125px; */
   height: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;

@@ -1,43 +1,59 @@
-import { Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
-import type { FC } from 'react';
-
-import { Link } from '@/components/Link/Link.tsx';
+import { FC } from 'react';
 import { Page } from '@/components/Page.tsx';
-
-import tonSvg from './ton.svg';
+import './IndexPage.css';
+import LiveIcon from './live.svg';
+import { Link } from 'react-router-dom';
 
 export const IndexPage: FC = () => {
   return (
     <Page back={false}>
-      <List>
-        <Section
-          header="Features"
-          footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
-        >
-          <Link to="/ton-connect">
-            <Cell
-              before={<Image src={tonSvg} style={{ backgroundColor: '#007AFF' }}/>}
-              subtitle="Connect your TON wallet"
-            >
-              TON Connect
-            </Cell>
-          </Link>
-        </Section>
-        <Section
-          header="Application Launch Data"
-          footer="These pages help developer to learn more about current launch information"
-        >
-          <Link to="/init-data">
-            <Cell subtitle="User data, chat information, technical data">Init Data</Cell>
-          </Link>
-          <Link to="/launch-params">
-            <Cell subtitle="Platform identifier, Mini Apps version, etc.">Launch Parameters</Cell>
-          </Link>
-          <Link to="/theme-params">
-            <Cell subtitle="Telegram application palette information">Theme Parameters</Cell>
-          </Link>
-        </Section>
-      </List>
+      <div className="main-container">
+        <div className="row-flex header">
+          <button className="button">Rules</button>
+          <Link to='/Profile'> <button className="button">ID Profile</button></Link>
+        </div>
+        <div className="row">
+          <div>Next ticket draw</div>
+          <div className="row-flex">
+            <div>23.12.2024 17:00</div>
+            <button className="button live-btn">
+              <img className="live-icon" src={LiveIcon} alt="Live" />
+              Live
+            </button>
+          </div>
+        </div>
+        <hr style={{ margin: '20px 0' }}></hr>
+        <div className="row">
+          <div className="row-flex">
+            <div>Winning combination today</div>
+            <div>06.12.2024</div>
+          </div>
+          <div className="row-flex">
+            <div className="numbers">
+              {Array(6).fill(24).map((number, index) => (
+                <span key={index} className="winning-number-box">{number}</span>
+              ))}
+            </div>
+            <button className="button live-btn">
+              <img className="live-icon" src={LiveIcon} alt="Live" />
+              Live
+            </button>
+          </div>
+        </div>
+        <div className="row jackpot">
+          <div>JACKPOT</div>
+          <div className="jackpot-amount">$20 000</div>
+        </div>
+        <div className="row number-selector">
+          <span>Select numbers</span>
+
+          <input type="text" placeholder="Input numbers" className="input-numbers" />
+
+        </div>
+        <div className="row">
+          <button className="cta-button">BUY TICKET</button>
+        </div>
+      </div>
     </Page>
   );
 };

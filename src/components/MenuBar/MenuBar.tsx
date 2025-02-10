@@ -31,9 +31,9 @@ export const MenuBar: React.FC = () => {
           isActive={location.pathname === '/tickets'}
         />
       </div>
-      <div className="navigation-bar">
-        {/* <div className="handle" /> */}
-      </div>
+      {/* <div className="navigation-bar">
+        <div className="handle" />
+      </div> */}
     </div>
   );
 }; 

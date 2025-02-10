@@ -1,0 +1,223 @@
+/* Main */
+.main-container {
+  width: 100%;
+}
+
+/* Заголовок */
+.header-view {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.header{
+    margin-bottom: 30px;
+}
+/* Інформація про квиток */
+.ticket-info {
+  padding: 16px;
+}
+
+.next-draw, .winning-combination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-icon {
+    width: 20px;
+    height: 14px;
+    margin-right: 5px; 
+  }
+
+.live-status{
+  background: #B8CDEA;
+  border-radius: 12px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  color: #000; /* Колір тексту для статусу */
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Рядки */
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Кнопки */
+.button, .cta-button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Номери */
+.numbers {
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.winning-number-box {
+    border: none; /* Без меж */
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 28px;
+    background: #151511;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #FAF6EC;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+/* Джекпот */
+.jackpot-info {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.jackpot-title {
+  font-weight: bold;
+}
+
+
+/* Вибір чисел */
+.select-numbers {
+  text-align: center;
+  margin: 16px 0;
+}
+
+/* Навігаційні посилання */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+/* CTA Button */
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  width: 280px;
+  height: 60px;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.live-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+  width: 90px;
+  height: 24px;
+  background: rgba(184, 205, 238, 1);
+  border-radius: 24px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-text {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  color: #FAF6EC;
+}
+
+/* Ticket Info */
+.ticket-info {
+  position: absolute;
+  width: 380px;
+  height: 43px;
+  left: 16px;
+  top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.next-draw, .winning-combination {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #151511;
+}
+
+/* Jackpot Info */
+.jackpot-info {
+  position: absolute;
+  width: 120px;
+  height: 64px;
+  left: 146px;
+  top: 267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jackpot-title {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 24px;
+  color: #151511;
+}
+
+.jackpot-amount {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing:  0.15px;
+}
+
+.next-draw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.next-draw-time {
+  display: flex;
+  align-items: center;
+}
+
+/* Введення чисел */
+.input-numbers {
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #151511;
+  border-radius: 8px;
+  width: 60%;
+} 
+
+.jackpot{
+    margin: 45px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.number-selector {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
