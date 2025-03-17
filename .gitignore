@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 *.pem
+.env
+
+# React Component Preview
+previewConfig.json

@@ -1,31 +1,30 @@
 import { FC } from 'react';
 import { Page } from '@/components/Page.tsx';
 import './IndexPage.css';
-import LiveIcon from './live.svg';
 import { Link } from 'react-router-dom';
+import CustomNumberInput from '@/components/Input/CustomNumberInput';
+import LiveButton from '@/components/Buttons/Live';
+
 
 export const IndexPage: FC = () => {
   return (
     <Page back={false}>
       <div className="main-container">
         <div className="row-flex header">
-          <button className="button">Rules</button>
-          <Link to='/Profile'> <button className="button">ID Profile</button></Link>
+        <Link to='/rules'><button className="button">Rules</button></Link>          
+        <Link to='/Profile'> <button className="button">ID Profile</button></Link>
         </div>
         <div className="row">
-          <div>Next ticket draw</div>
+          <b>Next ticket draw</b>
           <div className="row-flex">
             <div>23.12.2024 17:00</div>
-            <button className="button live-btn">
-              <img className="live-icon" src={LiveIcon} alt="Live" />
-              Live
-            </button>
+            <LiveButton link="https://example.com/live" isActive={false} />
           </div>
         </div>
         <hr style={{ margin: '20px 0' }}></hr>
         <div className="row">
           <div className="row-flex">
-            <div>Winning combination today</div>
+            <b>Winning combination today</b>
             <div>06.12.2024</div>
           </div>
           <div className="row-flex">
@@ -34,10 +33,7 @@ export const IndexPage: FC = () => {
                 <span key={index} className="winning-number-box">{number}</span>
               ))}
             </div>
-            <button className="button live-btn">
-              <img className="live-icon" src={LiveIcon} alt="Live" />
-              Live
-            </button>
+            <LiveButton link="https://example.com/live" isActive={true} />
           </div>
         </div>
         <div className="row jackpot">
@@ -46,10 +42,8 @@ export const IndexPage: FC = () => {
         </div>
         <div className="row number-selector">
           <span>Select numbers</span>
-
-          <input type="text" placeholder="Input numbers" className="input-numbers" />
-
         </div>
+        <CustomNumberInput />
         <div className="row">
           <button className="cta-button">BUY TICKET</button>
         </div>

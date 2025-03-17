@@ -6,6 +6,8 @@ import { LaunchParamsPage } from '@/pages/LaunchParamsPage.tsx';
 import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
 import { ProfilePage } from '@/pages/Profile/ProfilePage';
 import { TicketsPage } from '@/pages/TicketsPage/TicketsPage';
+import { RulesPage } from '@/pages/RulesPage/RulesPage';
+
 
 interface Route {
   path: string;
@@ -53,4 +55,6 @@ export const routes: Route[] = [
       </svg>
     ),
   },
+  { path: '/rules', Component: RulesPage, title: 'Rules' },
+
 ];
